@@ -36,6 +36,8 @@ public class SecurityConfig
 					.requestMatchers("/api/auth/token/generate").permitAll()	
 					.requestMatchers("/api/auth/login").authenticated()
 					.requestMatchers("/api/student/add").permitAll()
+					.requestMatchers("/api/patient/add").permitAll()
+					.requestMatchers("/api/patient/getpatient/{username}").permitAll()
 					
 				
 				

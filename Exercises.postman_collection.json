@@ -16,7 +16,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"Johnathon Petrson\",\r\n    \"email\":\"johnathon@gmail.com\",\r\n    \"contact\":\"9632587410\",\r\n    \"year\":4,\r\n    \"stream\":\"Artificial Intelligence\",\r\n    \"user\":{\r\n        \"username\":\"johnathon\",\r\n        \"password\":\"johnathon\"\r\n    }\r\n}",
+					"raw": "{\r\n    \"name\":\"Rajiv Mehta\",\r\n    \"age\":\"45\",\r\n    \"user\":{\r\n        \"username\":\"rajiv\",\r\n        \"password\":\"rajiv\"\r\n    },\r\n    \"medicalHistory\":{\r\n        \"illness\":\"Diabetes\",\r\n        \"numofYears\":\"4\",\r\n        \"currentMedication\":\"Taking some pills daily\"\r\n    }\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -24,15 +24,71 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8088/api/student/add",
+					"raw": "localhost:8088/api/patient/add",
 					"host": [
 						"localhost"
 					],
 					"port": "8088",
 					"path": [
 						"api",
-						"student",
+						"patient",
 						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8088/api/patient/add",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Rajiv Mehta\",\r\n    \"age\":\"45\",\r\n    \"user\":{\r\n        \"username\":\"rajiv\",\r\n        \"password\":\"rajiv\"\r\n    },\r\n    \"medicalHistory\":{\r\n        \"illness\":\"Diabetes\",\r\n        \"numofYears\":\"4\",\r\n        \"currentMedication\":\"Taking some pills daily\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8088/api/patient/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"patient",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8088/api/patient/getpatient/rajiv",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8088/api/patient/getpatient/rajiv",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"patient",
+						"getpatient",
+						"rajiv"
 					]
 				}
 			},
