@@ -48,7 +48,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"Rajiv Mehta\",\r\n    \"age\":\"45\",\r\n    \"user\":{\r\n        \"username\":\"rajiv\",\r\n        \"password\":\"rajiv\"\r\n    },\r\n    \"medicalHistory\":{\r\n        \"illness\":\"Diabetes\",\r\n        \"numofYears\":\"4\",\r\n        \"currentMedication\":\"Taking some pills daily\"\r\n    }\r\n}",
+					"raw": "{\r\n    \"name\":\"Arjun Reddy\",\r\n    \"age\":\"35\",\r\n    \"user\":{\r\n        \"username\":\"arjun\",\r\n        \"password\":\"arjun\"\r\n    },\r\n    \"medicalHistory\":{\r\n        \"illness\":\"Headache\",\r\n        \"numofYears\":\"1\",\r\n        \"currentMedication\":\"Taking some pills with some oinmne daily\"\r\n    }\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -88,6 +88,142 @@
 						"api",
 						"patient",
 						"getpatient",
+						"rajiv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8088/api/animal/getbycname/rishab",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8088/api/animal/getbycname/tommy",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"animal",
+						"getbycname",
+						"tommy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8088/api/animal/getbydogid/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8088/api/animal/getbydogid/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"animal",
+						"getbydogid",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8088/api/animal/add",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"a1\":\"Animal-1\",\r\n    \"dog\":{\r\n        \"dogname\":\"Jimmy\",\r\n        \"breed\":\"Dabour Man\"\r\n    },\r\n    \"cat\":{\r\n        \"catname\":\"Tommy\",\r\n        \"breed\":\"Lilous\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8088/api/animal/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"animal",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8088/api/learner/add",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Rajesh Kanna\",\r\n    \"email\":\"rajesh@gmail.com\",\r\n    \"contact\":\"1234569871\",\r\n    \"user\":{\r\n        \"username\":\"rajesh\",\r\n        \"password\":\"rajesh\"\r\n    },\r\n    \"address\":{\r\n        \"streetname\":\"Temple Road\",\r\n        \"city\":\"Manhaton\",\r\n        \"district\":\"Namakkal\",\r\n        \"pincode\":\"123 561\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8088/api/learner/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"learner",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8088/api/learner/findbyusername/rajiv",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8088/api/learner/findbyusername/rajiv",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"learner",
+						"findbyusername",
 						"rajiv"
 					]
 				}
