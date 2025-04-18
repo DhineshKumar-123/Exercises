@@ -34,7 +34,7 @@ public class StudentService
 		String encodedPass = bcrypt.encode(user1.getPassword());
 		user1.setPassword(encodedPass);
 		
-		user1 = authRepository.save(user1);
+		authRepository.save(user1);
 		student.setUser(user1);
 		
 		return studentRepository.save(student);

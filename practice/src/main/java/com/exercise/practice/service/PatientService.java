@@ -42,11 +42,11 @@ public class PatientService
 		String encodedPass = bcrypt.encode(user1.getPassword());
 		user1.setPassword(encodedPass);
 		
-		user1 = authRepository.save(user1);
+		authRepository.save(user1);
 		patient.setUser(user1);
 		
 		MedicalHistory medical = patient.getMedicalHistory();
-		medical = medicalHistoryRepository.save(medical);
+		medicalHistoryRepository.save(medical);
 		patient.setMedicalHistory(medical);
 		
 		return patientRepository.save(patient);
